@@ -1,0 +1,1066 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* main */
+  main {
+    width: 100%;
+    height: 200vh;
+    font-family: "Sora", sans-serif;
+  }
+  /* nav bar */
+  nav {
+    width: 100%;
+    height: 4%;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    position: sticky;
+    font-size: 14px;
+    background-color: white;
+  }
+  /* site icon image */
+  .site-icon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+  }
+  .site-icon img {
+    width: 110px;
+  }
+  /* general stylye */
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  li a {
+    color: #06511c;
+    padding: 8px 15px;
+    transition: all linear 1s;
+  }
+  li a:hover {
+    color: white;
+    stroke: white;
+    background-color: #06511c;
+  }
+
+  /* menu svg */
+  li a:hover svg path {
+    stroke: white;
+  }
+  /* anchor page div holder */
+  .different-pages {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .first,
+  .second,
+  .third {
+    display: none;
+  }
+  /* menu */
+  .menu {
+    display: block;
+  }
+  /* sign up and profile div */
+  .sign-up {
+    display: none;
+  }
+  /* section container */
+  .section-container {
+    width: 100%;
+    height: 96%;
+    position: relative;
+    background-color: rgba(215, 214, 214, 0.533);
+  }
+  /* scetion body backgroung  */
+  .section-body-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background: url("../Images/white\ pattern.png"), rgba(103, 194, 163, 0.555);
+    opacity: 0.6;
+  }
+  /* main-section-whole-body */
+  .main-section {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+  }
+  /* sided nav bar */
+  .side-nav {
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    display: flex;
+    color: white;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    transform: translate(-120%);
+    transition: all linear 2s;
+    justify-content: space-evenly;
+    background: linear-gradient(
+        to bottom,
+        #06511c,
+        #06511dab,
+        #06511d63,
+        #947b00de,
+        #947b00c6,
+        #947b00
+      ),
+      #947b00;
+  }
+  .show .side-nav {
+    transform: translate(-3%);
+  }
+  .home a,
+  .dashboard,
+  .classes,
+  .result,
+  .contact-us {
+    display: flex;
+    align-items: center;
+  }
+  .side-nav h2 {
+    cursor: pointer;
+  }
+  .side-nav img {
+    padding: 20px;
+    cursor: pointer;
+  }
+  .home a {
+    color: white;
+  }
+  /* nav intro info of date and username */
+  .user-info {
+    height: 4%;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: right;
+  }
+  /* horizontal line */
+  .line {
+    width: 2px;
+    height: 35px;
+    margin: 0 30px;
+    background-color: black;
+  }
+  /* user icon and name */
+  .user {
+    display: flex;
+    width: 215px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* uder svg holder */
+  .svg-user {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #06511c;
+  }
+  .svg-user svg path {
+    fill: white;
+  }
+  /* section page */
+  .section-page {
+    width: 100%;
+    height: 100%;
+  }
+  /* line */
+  .gray {
+    width: 60%;
+    height: 2px;
+    background: #06511c;
+  }
+  /* my academics area  */
+  .bsc {
+    height: 4%;
+    width: 100%;
+    display: flex;
+    font-size: 28px;
+    font-weight: 500;
+    align-items: center;
+  }
+  /*  BSC AREA  */
+  .bsc-area {
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #989898;
+    border-radius: 20px 20px 0 0;
+  }
+  /* software engineering  */
+  .software {
+    width: 80%;
+    height: 3%;
+    border-bottom: 4px solid black;
+  }
+  /* more information on software engineering */
+  .more-info {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #989898;
+  }
+  /* level container */
+  .level-container {
+    width: 100%;
+    height: 20%;
+  }
+  /* current enrolled level */
+  .levels {
+    width: 98%;
+    height: 25%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .levels h4:first-child {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    justify-content: space-evenly;
+  }
+  .enrolled {
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    background-color: #06511c;
+  }
+  /* proof of enronment area */
+  .enroll-proof {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding: 20px 10px;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    justify-content: space-between;
+  }
+  /* proof btn  */
+  .proof {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #c79f00;
+  }
+  /* my course */
+  .cou {
+    width: 95%;
+    height: 6%;
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 500;
+    align-items: center;
+    border-top: 2px solid #989898;
+  }
+  /*  all courses offered */
+  .different-course {
+    width: 95%;
+    height: 65%;
+    margin: auto;
+    display: grid;
+    justify-content: space-between;
+  }
+  .subjects {
+    width: 230px;
+    height: 260px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 1px 5px 12px black;
+  }
+  /* course img */
+  .img-div {
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+  }
+  .img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .course-detail {
+    width: 100%;
+    height: 35%;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .go {
+    width: 120px;
+    height: 25px;
+    margin: auto;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    background-color: #947b00;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* main */
+  main {
+    width: 100%;
+    height: 200vh;
+    font-family: "Sora", sans-serif;
+  }
+  /* nav bar */
+  nav {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    font-size: 14px;
+    background-color: white;
+  }
+  /* site icon image */
+  .site-icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-icon img {
+    width: 110px;
+  }
+  /* general stylye */
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  li a {
+    color: #06511c;
+    padding: 8px 15px;
+    transition: all linear 1s;
+  }
+  li a:hover {
+    color: white;
+    stroke: white;
+    background-color: #06511c;
+  }
+  /* menu svg */
+  li a:hover svg path {
+    stroke: white;
+  }
+  /* anchor page div holder */
+  .different-pages {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .about {
+    display: none;
+  }
+  /* sign up and profile div */
+  .sign-up {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  /* sign up anchor tag*/
+  .sign-up a {
+    transition: all linear 2s;
+  }
+  .sign-up li a:hover {
+    color: white;
+    background-color: #06511c;
+  }
+  /* my profile */
+  .my-profile {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    cursor: pointer;
+    color: #d9d9d9;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #097629 5%, #947b00);
+  }
+  .my-profile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    color: #d9d9d9;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* profile icon */
+  .profile-icon {
+    width: 28px;
+    height: 25px;
+    display: flex;
+    font-size: 10px;
+    color: #097629;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  /* profile icon svg */
+  .profile-icon svg {
+    width: 15px;
+    height: 16px;
+  }
+  /* section container */
+  .section-container {
+    width: 100%;
+    height: 95%;
+    position: relative;
+    background-color: rgba(215, 214, 214, 0.533);
+  }
+  /* scetion body backgroung  */
+  .section-body-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background: url("../Images/white\ pattern.png"), rgba(103, 194, 163, 0.555);
+    opacity: 0.6;
+  }
+  /* main-section-whole-body */
+  .main-section {
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+  }
+  /* sided nav bar */
+  .side-nav {
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    display: flex;
+    color: white;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    transform: translate(-120%);
+    transition: all linear 2s;
+    justify-content: space-evenly;
+    background: linear-gradient(
+        to bottom,
+        #06511c,
+        #06511dab,
+        #06511d63,
+        #947b00de,
+        #947b00c6,
+        #947b00
+      ),
+      #947b00;
+  }
+  .show .side-nav {
+    transform: translate(0);
+  }
+  .home a,
+  .dashboard,
+  .classes,
+  .result,
+  .contact-us {
+    display: flex;
+    align-items: center;
+  }
+  .side-nav h2 {
+    cursor: pointer;
+  }
+  .side-nav img {
+    padding: 20px;
+    cursor: pointer;
+  }
+  .home a {
+    color: white;
+  }
+  /* nav intro info of date and username */
+  .user-info {
+    height: 4%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  /* horizontal line */
+  .line {
+    width: 2px;
+    height: 55px;
+    margin: 0 30px;
+    background-color: black;
+  }
+  /* user icon and name */
+  .user {
+    display: flex;
+    width: 215px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* uder svg holder */
+  .svg-user {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #06511c;
+  }
+  .svg-user svg path {
+    fill: white;
+  }
+  /* section page */
+  .section-page {
+    width: 100%;
+    height: 100%;
+  }
+  /* line */
+  .gray {
+    width: 80%;
+    height: 2px;
+    margin-left: 20%;
+    /* background-color: #bababa; */
+    background: #06511c;
+  }
+  /* my academics area  */
+  .bsc {
+    height: 4%;
+    width: 100%;
+    display: flex;
+    font-size: 28px;
+    font-weight: 500;
+    align-items: center;
+  }
+  /*  BSC AREA  */
+  .bsc-area {
+    width: 100%;
+    height: 90%;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #989898;
+    border-radius: 20px 20px 0 0;
+  }
+  /* software engineering  */
+  .software {
+    width: 37%;
+    height: 3%;
+    border-bottom: 4px solid black;
+  }
+  /* more information on software engineering */
+  .more-info {
+    height: 6%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #989898;
+  }
+  /* level container */
+  .level-container {
+    width: 100%;
+    height: 20%;
+  }
+  /* current enrolled level */
+  .levels {
+    width: 85%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .levels h4:first-child {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    justify-content: space-evenly;
+  }
+  .enrolled {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 3px;
+    background-color: #06511c;
+  }
+  /* proof of enronment area */
+  .enroll-proof {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding: 30px 50px;
+    background-color: #f8f8f8;
+    justify-content: space-between;
+  }
+  /* proof btn  */
+  .proof {
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #c79f00;
+  }
+  /* my course */
+  .cou {
+    width: 95%;
+    height: 6%;
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 500;
+    align-items: center;
+    border-top: 2px solid #989898;
+  }
+  /*  all courses offered */
+  .different-course {
+    width: 95%;
+    height: 65%;
+    margin: auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+  }
+  .subjects {
+    width: 280px;
+    height: 450px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 1px 5px 12px black;
+  }
+  /* course img */
+  .img-div {
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+  }
+  .img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .course-detail {
+    width: 100%;
+    height: 35%;
+    font-size: 14px;
+    padding: 20px 25px;
+  }
+  .go {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #947b00;
+  }
+}
+@media screen and (min-width: 1025px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* main */
+  main {
+    width: 100%;
+    height: 210vh;
+    font-family: "Sora", sans-serif;
+  }
+  /* nav bar */
+  nav {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+  }
+  /* site icon image */
+  .site-icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-icon img {
+    width: 180px;
+  }
+  /* general stylye */
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  li a {
+    color: #06511c;
+    padding: 10px 20px;
+    transition: all linear 1s;
+  }
+  li a:hover {
+    color: white;
+    stroke: white;
+    background-color: #06511c;
+  }
+  /* menu svg */
+  li a:hover svg path {
+    stroke: white;
+  }
+  /* anchor page div holder */
+  .different-pages {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* sign up and profile div */
+  .sign-up {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* menu */
+  .menu {
+    display: none;
+  }
+  /* sign up anchor tag*/
+  .sign-up a {
+    padding: 10px 20px;
+    transition: all linear 2s;
+  }
+  .sign-up a:hover {
+    color: white;
+    background-color: #06511c;
+  }
+  .my-profile {
+    width: 45%;
+    height: 60%;
+    margin-right: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #097629 5%, #947b00);
+  }
+  .my-profile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    color: #d9d9d9;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* profile icon */
+  .profile-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 10px;
+    color: #097629;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  /* sign up text */
+  .sign-up li {
+    margin-left: 40px;
+  }
+  /* section container */
+  .section-container {
+    width: 100%;
+    height: 95%;
+    position: relative;
+    background-color: rgba(215, 214, 214, 0.533);
+  }
+  /* scetion body backgroung  */
+  .section-body-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background: url("../Images/white\ pattern.png"), rgba(103, 194, 163, 0.555);
+    opacity: 0.6;
+  }
+  /* main-section-whole-body */
+  .main-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 60px;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  /* sided nav bar */
+  .side-nav {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 300px 0;
+    border-radius: 30px 30px 0 0;
+    justify-content: space-evenly;
+    background: linear-gradient(
+        to bottom,
+        #06511c,
+        #06511dab,
+        #06511d63,
+        #947b00de,
+        #947b00c6,
+        #947b00
+      ),
+      #947b00;
+  }
+  .side-nav h2 {
+    cursor: pointer;
+  }
+  .side-nav img {
+    padding: 20px;
+    cursor: pointer;
+  }
+  .home a {
+    color: white;
+  }
+  /* nav intro info of date and username */
+  .user-info {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  /* horizontal line */
+  .line {
+    width: 2px;
+    height: 55px;
+    margin: 0 30px;
+    background-color: black;
+  }
+  /* user icon and name */
+  .user {
+    display: flex;
+    width: 215px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* uder svg holder */
+  .svg-user {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #06511c;
+  }
+  .svg-user svg path {
+    fill: white;
+  }
+  /* section page */
+  .section-page {
+    width: 80%;
+    height: 100%;
+  }
+  /* line */
+  .gray {
+    width: 80%;
+    height: 2px;
+    margin-left: 20%;
+    /* background-color: #bababa; */
+    background: #06511c;
+  }
+  /* my academics area  */
+  .bsc {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    font-size: 28px;
+    font-weight: 500;
+    align-items: center;
+  }
+  /*  BSC AREA  */
+  .bsc-area {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    background-color: white;
+    border: 1px solid #989898;
+    border-radius: 20px 20px 0 0;
+  }
+  /* software engineering  */
+  .software {
+    width: 28%;
+    height: 3%;
+    border-bottom: 4px solid black;
+  }
+  /* more information on software engineering */
+  .more-info {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #989898;
+  }
+  /* level container */
+  .level-container {
+    width: 100%;
+    height: 25%;
+  }
+  /* current enrolled level */
+  .levels {
+    width: 50%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .levels h4:first-child {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    justify-content: space-evenly;
+  }
+  .enrolled {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 3px;
+    background-color: #06511c;
+  }
+  /* proof of enronment area */
+  .enroll-proof {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding: 30px 50px;
+    background-color: #f8f8f8;
+    justify-content: space-between;
+  }
+  /* proof btn  */
+  .proof {
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #c79f00;
+  }
+  /* my course */
+  .cou {
+    width: 95%;
+    height: 8%;
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 500;
+    align-items: center;
+    border-top: 2px solid #989898;
+  }
+  /*  all courses offered */
+  .different-course {
+    width: 95%;
+    height: 35%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .subjects {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 1px 5px 12px black;
+  }
+  /* course img */
+  .img-div {
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+  }
+  .img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .course-detail {
+    width: 100%;
+    height: 35%;
+    font-size: 14px;
+    padding: 20px 25px;
+  }
+  .go {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #947b00;
+  }
+}

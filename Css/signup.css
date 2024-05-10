@@ -1,0 +1,842 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* section body */
+  section {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    font-family: "Sora", sans-serif;
+  }
+  /* div for image alone with some write up  */
+  .bg-image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        #c4c4c400,
+        #c4c4c400,
+        #c79f0040,
+        #c79f0076,
+        #c79f00a4,
+        #c79f00
+      ),
+      url("../Images/girl\ in\ lib.png");
+    display: none;
+  }
+  /*sign up form  */
+  .sign-up-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* backgrond color and image */
+  .image-bg {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background: url("../Images/black\ pattern.png") center/cover;
+  }
+  /*start your applications  */
+  .sign-up-form h2 {
+    font-size: 26px;
+    color: #06511c;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+  /* info to tell the user to create an account */
+  .create-info {
+    width: 80%;
+    height: 70px;
+    text-align: center;
+  }
+  /* Sign Up Form */
+  form {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  /*  Notice to all user this page is required */
+  form > p {
+    font-size: 14px;
+    color: #1d1d1d;
+    font-weight: bold;
+  }
+  /* firstname holder div */
+  .firstname-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .firstname-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Surname holder div */
+  .surname-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .surname-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Email div holder */
+  .email-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .email-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Password div holder */
+  .password-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .password-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* eye icon to display password */
+  .opened-eye {
+    display: none;
+  }
+  .show .opened-eye {
+    display: block;
+  }
+  .show .closed-eye {
+    display: none;
+  }
+  /*  passweord characters checkers  */
+  .password-checkers {
+    width: 100%;
+    height: 130px;
+    display: grid;
+    font-size: 13px;
+    color: #2d2d2d;
+    grid-template-columns: auto auto;
+  }
+  /* lowercase on */
+  /* checkers icon */
+  .number-off,
+  .length-off,
+  .special-off,
+  .uppercase-off,
+  .lowercase-off {
+    display: none;
+  }
+  .display .lowercase-off,
+  .displa .length-off,
+  .displ .number-off,
+  .disp .special-off,
+  .dis .uppercase-off {
+    display: inline;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .display .lowercase-off path {
+    fill: white;
+  }
+  .displa .length-off path {
+    fill: white;
+  }
+  .displ .number-off path {
+    fill: white;
+  }
+  .disp .special-off path {
+    fill: white;
+  }
+  .dis .uppercase-off path {
+    fill: white;
+  }
+  .display .lowercase-on,
+  .displa .length-on,
+  .displ .number-on,
+  .disp .special-on,
+  .dis .uppercase-on {
+    display: none;
+  }
+  /* confirm your password */
+  .confirm-password {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .confirm-password input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /*  phone number div container */
+  .phone-conatiner {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .phone-conatiner input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* policy container */
+  .policy-terms {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .red-color {
+    color: red;
+  }
+  .checks-box {
+    width: 20px;
+    height: 15px;
+  }
+  /* style for all form inpt field */
+  .showed .firstname,
+  .shows .surname,
+  .check .email,
+  .checks .phone {
+    border-radius: 50%;
+    background-color: black;
+  }
+  .showed .firstname path,
+  .shows .surname path,
+  .check .email path,
+  .checks .phone path {
+    fill: white;
+  }
+  /* submit or create account */
+  .Create-account {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #ea3939;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* error message */
+  .error {
+    color: red;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* section body */
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Sora", sans-serif;
+  }
+  /* div for image alone with some write up  */
+  .bg-image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        #c4c4c400,
+        #c4c4c400,
+        #c79f0040,
+        #c79f0076,
+        #c79f00a4,
+        #c79f00
+      ),
+      url("../Images/girl\ in\ lib.png");
+  }
+  /* text in the lady in lib image */
+  .Golden-mind {
+    width: 380px;
+    height: 230px;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  /*sign up form  */
+  .sign-up-form {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* backgrond color and image */
+  .image-bg {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background: url("../Images/black\ pattern.png") center/cover;
+  }
+  /*start your applications  */
+  .sign-up-form h2 {
+    font-size: 26px;
+    color: #06511c;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+  /* info to tell the user to create an account */
+  .create-info {
+    width: 60%;
+    height: 70px;
+    text-align: center;
+  }
+  /* Sign Up Form */
+  form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  /*  Notice to all user this page is required */
+  form > p {
+    font-size: 14px;
+    color: #1d1d1d;
+    font-weight: bold;
+  }
+  /* firstname holder div */
+  .firstname-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .firstname-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Surname holder div */
+  .surname-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .surname-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Email div holder */
+  .email-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .email-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Password div holder */
+  .password-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .password-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* eye icon to display password */
+  .opened-eye {
+    display: none;
+  }
+  .show .opened-eye {
+    display: block;
+  }
+  .show .closed-eye {
+    display: none;
+  }
+  /*  passweord characters checkers  */
+  .password-checkers {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    font-size: 13px;
+    color: #2d2d2d;
+    grid-template-columns: auto auto;
+  }
+  /* lowercase on */
+  /* checkers icon */
+  .number-off,
+  .length-off,
+  .special-off,
+  .uppercase-off,
+  .lowercase-off {
+    display: none;
+  }
+  .display .lowercase-off,
+  .displa .length-off,
+  .displ .number-off,
+  .disp .special-off,
+  .dis .uppercase-off {
+    display: inline;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .display .lowercase-off path {
+    fill: white;
+  }
+  .displa .length-off path {
+    fill: white;
+  }
+  .displ .number-off path {
+    fill: white;
+  }
+  .disp .special-off path {
+    fill: white;
+  }
+  .dis .uppercase-off path {
+    fill: white;
+  }
+  .display .lowercase-on,
+  .displa .length-on,
+  .displ .number-on,
+  .disp .special-on,
+  .dis .uppercase-on {
+    display: none;
+  }
+  /* confirm your password */
+  .confirm-password {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .confirm-password input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /*  phone number div container */
+  .phone-conatiner {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .phone-conatiner input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* policy container */
+  .policy-terms {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .red-color {
+    color: red;
+  }
+  .checks-box {
+    width: 20px;
+    height: 15px;
+  }
+  /* style for all form inpt field */
+  .showed .firstname,
+  .shows .surname,
+  .check .email,
+  .checks .phone {
+    border-radius: 50%;
+    background-color: black;
+  }
+  .showed .firstname path,
+  .shows .surname path,
+  .check .email path,
+  .checks .phone path {
+    fill: white;
+  }
+  /* submit or create account */
+  .Create-account {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #ea3939;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* error message */
+  .error {
+    color: red;
+  }
+}
+@media screen and (min-width: 1025px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* section body */
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Sora", sans-serif;
+  }
+  /* div for image alone with some write up  */
+  .bg-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    border-radius: 0 40px 40px 0;
+    background: linear-gradient(
+        to bottom,
+        #c4c4c400,
+        #c4c4c400,
+        #c79f0040,
+        #c79f0076,
+        #c79f00a4,
+        #c79f00
+      ),
+      url("../Images/girl\ in\ lib.png") center/cover;
+  }
+  /* text in the lady in lib image */
+  .Golden-mind {
+    width: 380px;
+    height: 250px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+  }
+  /*sign up form  */
+  .sign-up-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* backgrond color and image */
+  .image-bg {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background: url("../Images/black\ pattern.png") center/cover;
+  }
+  /*start your applications  */
+  .sign-up-form h2 {
+    font-size: 26px;
+    color: #06511c;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+  /* info to tell the user to create an account */
+  .create-info {
+    width: 60%;
+    height: 70px;
+    text-align: center;
+  }
+  /* Sign Up Form */
+  form {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  /*  Notice to all user this page is required */
+  form > p {
+    font-size: 14px;
+    color: #1d1d1d;
+    font-weight: bold;
+  }
+  /* firstname holder div */
+  .firstname-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .firstname-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Surname holder div */
+  .surname-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .surname-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Email div holder */
+  .email-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .email-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* Password div holder */
+  .password-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .password-container input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* eye icon to display password */
+  .opened-eye {
+    display: none;
+  }
+  .show .opened-eye {
+    display: block;
+  }
+  .show .closed-eye {
+    display: none;
+  }
+  /*  passweord characters checkers  */
+  .password-checkers {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    font-size: 13px;
+    color: #2d2d2d;
+    grid-template-columns: auto auto;
+  }
+  /* lowercase on */
+  /* checkers icon */
+  .number-off,
+  .length-off,
+  .special-off,
+  .uppercase-off,
+  .lowercase-off {
+    display: none;
+  }
+  .display .lowercase-off,
+  .displa .length-off,
+  .displ .number-off,
+  .disp .special-off,
+  .dis .uppercase-off {
+    display: inline;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .display .lowercase-off path {
+    fill: white;
+  }
+  .displa .length-off path {
+    fill: white;
+  }
+  .displ .number-off path {
+    fill: white;
+  }
+  .disp .special-off path {
+    fill: white;
+  }
+  .dis .uppercase-off path {
+    fill: white;
+  }
+  .display .lowercase-on,
+  .displa .length-on,
+  .displ .number-on,
+  .disp .special-on,
+  .dis .uppercase-on {
+    display: none;
+  }
+  /* confirm your password */
+  .confirm-password {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .confirm-password input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /*  phone number div container */
+  .phone-conatiner {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .phone-conatiner input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* policy container */
+  .policy-terms {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .red-color {
+    color: red;
+  }
+  .checks-box {
+    width: 20px;
+    height: 15px;
+  }
+  /* style for all form inpt field */
+  .showed .firstname,
+  .shows .surname,
+  .check .email,
+  .checks .phone {
+    border-radius: 50%;
+    background-color: black;
+  }
+  .showed .firstname path,
+  .shows .surname path,
+  .check .email path,
+  .checks .phone path {
+    fill: white;
+  }
+  /* submit or create account */
+  .Create-account {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #ea3939;
+    box-shadow: 1px 1px 2px 3px #84848489;
+  }
+  /* error message */
+  .error {
+    color: red;
+  }
+}

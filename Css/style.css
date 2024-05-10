@@ -1,0 +1,847 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* whole section body */
+  .section-body {
+    width: 100%;
+    height: 135vh;
+    font-family: "Sora", sans-serif;
+    position: relative;
+  }
+  /* nav bar */
+  nav {
+    width: 100%;
+    height: 10%;
+    z-index: 22;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: bold;
+    position: fixed;
+    transition: all linear 1s;
+    background-color: white;
+  }
+  .show nav {
+    height: 100%;
+  }
+  /* site icon image */
+  .site-icon {
+    width: 40%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .site-icon img {
+    width: 110px;
+  }
+  /* general stylye */
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  li a {
+    display: block;
+    color: #06511c;
+    padding: 8px 15px;
+    transition: all linear 1s;
+  }
+  li a:hover {
+    color: white;
+    stroke: white;
+    background-color: #06511c;
+  }
+  /* menu svg */
+  li a:hover svg path {
+    stroke: white;
+  }
+  /* anchor page div holder */
+  .different-pages {
+    width: 52%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  /* menu */
+  .menu {
+    top: 15px;
+    right: 10px;
+    display: block;
+    position: fixed;
+  }
+  /* sign up and profile div */
+  .sign-up {
+    width: 52%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  /* sign up anchor tag*/
+  .sign-up a {
+    transition: all linear 2s;
+  }
+  .sign-up a:hover {
+    color: white;
+    background-color: #06511c;
+  }
+  /* my profile */
+  .my-profile {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    cursor: pointer;
+    color: #d9d9d9;
+    margin-left: 15px;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #097629 5%, #947b00);
+  }
+  /* profile icon */
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    font-size: 10px;
+    color: #097629;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  /* profile icon svg */
+  .profile-icon svg {
+    width: 15px;
+    height: 16px;
+  }
+  /* landing-page div */
+  .landing-page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  /* landing page text */
+  .text {
+    width: 100%;
+    height: 100%;
+    padding: 150px 30px;
+  }
+  .text h2 {
+    width: 330px;
+    font-size: 31px;
+    color: #947b00;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px black;
+  }
+  /* color green for some part of the head text */
+  .wisdom {
+    color: #097629;
+  }
+  .text > p {
+    width: 250px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 2px #947b00;
+  }
+  /* Enroll Now btn */
+  .Enroll-now {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    background-color: #097629;
+    justify-content: space-evenly;
+  }
+  .Enroll-now:hover {
+    background-color: #06511c;
+  }
+  .line {
+    height: 1px;
+    width: 50px;
+    background-color: white;
+  }
+  /* landing page image */
+  .girl-image {
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    /* display: flex; */
+    /* align-items: end; */
+    position: fixed;
+    /* justify-content: center; */
+    background-color: #c8dbce;
+  }
+  .girl-image img {
+    height: 100%;
+  }
+  /* vision mission snd core value div */
+  .vision-div {
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+  }
+  /* vision */
+  .vision {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: #09762aae;
+  }
+  /* all icons */
+  .icons {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons svg {
+    width: 52px;
+    height: 32px;
+  }
+  .texts {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    color: white;
+    padding: 0 20px;
+    font-weight: lighter;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .texts h2 {
+    font-weight: 20px;
+  }
+  .texts p {
+    font-size: 14px;
+    font-weight: 14px;
+  }
+  /* mission */
+  .mission {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: #c79f00aa;
+  }
+  /* core value */
+  .core-value {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.667);
+  }
+  .core-value .texts {
+    color: black;
+  }
+  .core-value .texts > p {
+    font-weight: 500;
+  }
+  /* social icons */
+  .social-icons {
+    top: 25%;
+    right: 0;
+    width: 40px;
+    height: 180px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    background: #06511c;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(
+      to bottom,
+      #06511c,
+      #097629 20%,
+      #947b00c9,
+      #947b00
+    );
+  }
+  .social-icons svg:hover path {
+    fill: #c79f00;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* whole section body */
+  .section-body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Sora", sans-serif;
+    background: url("../Images/white\ pattern.png") center/cover no-repeat,
+      #e2e2e2;
+  }
+  /* nav bar */
+  nav {
+    width: 100%;
+    height: 10%;
+    z-index: 222;
+    display: flex;
+    font-size: 14px;
+    position: absolute;
+    background-color: white;
+  }
+  /* site icon image */
+  .site-icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-icon img {
+    width: 110px;
+  }
+  /* general stylye */
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  li a {
+    color: #06511c;
+    padding: 8px 15px;
+    transition: all linear 1s;
+  }
+  li a:hover {
+    color: white;
+    stroke: white;
+    background-color: #06511c;
+  }
+  /* menu svg */
+  li a:hover svg path {
+    stroke: white;
+  }
+  /* anchor page div holder */
+  .different-pages {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .menu {
+    display: none;
+  }
+  /* sign up and profile div */
+  .sign-up {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  /* sign up anchor tag*/
+  .sign-up a {
+    transition: all linear 2s;
+  }
+  .sign-up a:hover {
+    color: white;
+    background-color: #06511c;
+  }
+  /* my profile */
+  .my-profile {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    cursor: pointer;
+    color: #d9d9d9;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #097629 5%, #947b00);
+  }
+  /* profile icon */
+  .profile-icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    font-size: 10px;
+    color: #097629;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  /* profile icon svg */
+  .profile-icon svg {
+    width: 15px;
+    height: 16px;
+  }
+  /* landing-page div */
+  .landing-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  /* landing page text */
+  .text {
+    width: 50%;
+    height: 100%;
+    padding: 150px 30px;
+  }
+  .text h2 {
+    width: 330px;
+    font-size: 31px;
+    color: #947b00;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  /* color green for some part of the head text */
+  .wisdom {
+    color: #097629;
+  }
+  .text > p {
+    width: 250px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  /* Enroll Now btn */
+  .Enroll-now {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    background-color: #097629;
+    justify-content: space-evenly;
+  }
+  .Enroll-now:hover {
+    background-color: #06511c;
+  }
+  .line {
+    height: 1px;
+    width: 50px;
+    background-color: white;
+  }
+  /* landing page image */
+  .girl-image {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    position: absolute;
+    justify-content: center;
+    background-color: #c8dbce;
+  }
+  .girl-image img {
+    height: 87%;
+  }
+  /* vision mission snd core value div */
+  .vision-div {
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+  /* vision */
+  .vision {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    background-color: #09762ac5;
+  }
+  /* all icons */
+  .icons {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons svg {
+    width: 52px;
+    height: 32px;
+  }
+  .texts {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    color: white;
+    padding: 0 20px;
+    font-weight: lighter;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .texts h2 {
+    font-weight: 20px;
+  }
+  .texts p {
+    font-size: 14px;
+    font-weight: 14px;
+  }
+  /* mission */
+  .mission {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    background-color: #c79f00c5;
+  }
+  /* core value */
+  .core-value {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.667);
+    border-radius: 20px 20px 0 0;
+  }
+  .core-value .texts {
+    color: black;
+  }
+  .core-value .texts > p {
+    font-weight: 500;
+  }
+  /* social icons */
+  .social-icons {
+    top: 25%;
+    right: 0;
+    width: 40px;
+    height: 180px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    background: #06511c;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(
+      to bottom,
+      #06511c,
+      #097629 20%,
+      #947b00c9,
+      #947b00
+    );
+  }
+  .social-icons svg:hover path {
+    fill: #c79f00;
+  }
+
+  @keyframes move {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* whole section body */
+  .section-body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Sora", sans-serif;
+    background: url("../Images/white\ pattern.png") center/cover no-repeat,
+      #e2e2e2;
+  }
+  /* nav bar */
+  nav {
+    width: 100%;
+    height: 10%;
+    z-index: 222;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    background-color: white;
+  }
+  /* site icon image */
+  .site-icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-icon img {
+    width: 180px;
+  }
+  /* general stylye */
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  li a {
+    color: #06511c;
+    padding: 10px 20px;
+    transition: all linear 1s;
+  }
+  li a:hover {
+    color: white;
+    stroke: white;
+    background-color: #06511c;
+  }
+  /* menu svg */
+  li a:hover svg path {
+    stroke: white;
+  }
+  /* anchor page div holder */
+  .different-pages {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* sign up and profile div */
+  .sign-up {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* sign up anchor tag*/
+  .sign-up a {
+    padding: 10px 20px;
+    transition: all linear 2s;
+  }
+  .sign-up a:hover {
+    color: white;
+    background-color: #06511c;
+  }
+  /* my profile */
+  .my-profile {
+    width: 45%;
+    height: 60%;
+    display: flex;
+    cursor: pointer;
+    color: #d9d9d9;
+    margin-right: 50px;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #097629 5%, #947b00);
+  }
+  .menu {
+    display: none;
+  }
+  /* profile icon */
+  .profile-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 10px;
+    color: #097629;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  /* sign up text */
+  .sign-up li {
+    margin-left: 40px;
+  }
+  /* landing-page div */
+  .landing-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  /* landing page text */
+  .text {
+    width: 55%;
+    height: 100%;
+    padding: 120px 100px;
+    flex-direction: column;
+  }
+  .text h2 {
+    width: 390px;
+    font-size: 35px;
+    color: #947b00;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  /* color green for some part of the head text */
+  .wisdom {
+    color: #097629;
+  }
+  .text > p {
+    width: 250px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  /* Enroll Now btn */
+  .Enroll-now {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    background-color: #097629;
+    justify-content: space-evenly;
+  }
+  .Enroll-now:hover {
+    background-color: #06511c;
+  }
+  .line {
+    height: 1px;
+    width: 50px;
+    background-color: white;
+  }
+  /* landing page image */
+  .girl-image {
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: end;
+    padding-top: 30px;
+    position: absolute;
+    justify-content: end;
+    border-radius: 50% 0 0 50%;
+    background-color: #c8dbce;
+  }
+  .girl-image img {
+    height: 90%;
+  }
+  /* vision mission snd core value div */
+  .vision-div {
+    left: 6%;
+    bottom: 0;
+    width: 85%;
+    z-index: 4;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+  /* vision */
+  .vision {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    background-color: #09762ac5;
+  }
+  /* all icons */
+  .icons {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .texts {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    color: white;
+    padding: 0 20px;
+    font-weight: lighter;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .texts h2 {
+    font-weight: 23px;
+  }
+  .texts p {
+    font-weight: 18px;
+  }
+  /* mission */
+  .mission {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    background-color: #c79f00c5;
+  }
+  /* core value */
+  .core-value {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.667);
+    border-radius: 20px 20px 0 0;
+  }
+  .core-value .texts {
+    color: black;
+  }
+  .core-value .texts > p {
+    font-weight: 500;
+  }
+  /* social icons */
+  .social-icons {
+    top: 25%;
+    right: 0;
+    width: 40px;
+    height: 180px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    background: #06511c;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(
+      to bottom,
+      #06511c,
+      #097629 20%,
+      #947b00c9,
+      #947b00
+    );
+  }
+  .social-icons svg:hover path {
+    fill: #c79f00;
+  }
+
+  @keyframes move {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

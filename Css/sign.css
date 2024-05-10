@@ -1,0 +1,367 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* general a */
+  a {
+    color: #097629;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    font-family: "Sora", sans-serif;
+  }
+  /* sign in div */
+  .sign-in-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  .GreenGold-img {
+    width: 250px;
+    height: 180px;
+    margin: 30px 0;
+  }
+  .GreenGold-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .welcome-text {
+    color: #097629;
+  }
+  /* form */
+  form {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  form input {
+    width: 80%;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: solid #b0b0b0;
+    box-shadow: 2px 2px 2px 2px #7a7a7a90;
+  }
+  .reemember-holder {
+    width: 80%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .checks {
+    cursor: pointer;
+  }
+  .add .checks {
+    border-radius: 50%;
+    background-color: blue;
+  }
+  .add .checks path {
+    fill: white;
+  }
+  .login {
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #06511c, #097629 20%, #947b00);
+  }
+  /* sign in background image */
+  .background-imag {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background: url("../Images/black\ pattern.png") center/cover;
+  }
+  /* image area */
+  .imag-area {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* general a */
+  a {
+    color: #097629;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    font-family: "Sora", sans-serif;
+  }
+  /* sign in div */
+  .sign-in-page {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  .GreenGold-img {
+    width: 250px;
+    height: 180px;
+    margin: 60px 0;
+  }
+  .GreenGold-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .welcome-text {
+    color: #097629;
+  }
+  /* form */
+  form {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  form input {
+    width: 80%;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: solid #b0b0b0;
+    box-shadow: 2px 2px 2px 2px #7a7a7a90;
+  }
+  .reemember-holder {
+    width: 80%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .checks {
+    cursor: pointer;
+  }
+  .add .checks {
+    border-radius: 50%;
+    background-color: blue;
+  }
+  .add .checks path {
+    fill: white;
+  }
+  .login {
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #06511c, #097629 20%, #947b00);
+  }
+  /* sign in background image */
+  .background-imag {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background: url("../Images/black\ pattern.png");
+  }
+  /* image area */
+  .imag-area {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.163),
+        rgba(255, 255, 255, 0.064),
+        rgba(255, 255, 255, 0.432),
+        #197726b1,
+        #197725
+      ),
+      url("../Images/Rectangle 5.png") 30% / cover;
+  }
+  /* image div text holder */
+  .text-image-holder {
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+  }
+  /* (REGISTER AN ACCOUNT) */
+  .RAN {
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 3px rgba(211, 211, 211, 0.495);
+    background: linear-gradient(to right, #06511c, #097629 20%, #947b00);
+  }
+  .RAN a {
+    color: white;
+  }
+  .error {
+    color: red;
+  }
+}
+@media screen and (min-width: 1025px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* general a */
+  a {
+    color: #097629;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    font-family: "Sora", sans-serif;
+  }
+  /* sign in div */
+  .sign-in-page {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  .GreenGold-img {
+    width: 250px;
+    height: 180px;
+    margin: 30px 0;
+  }
+  .GreenGold-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .welcome-text {
+    color: #097629;
+  }
+  /* form */
+  form {
+    width: 80%;
+    display: flex;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  form input {
+    width: 60%;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: solid #b0b0b0;
+    box-shadow: 2px 2px 2px 2px #7a7a7a90;
+  }
+  .reemember-holder {
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .checks {
+    cursor: pointer;
+  }
+  .add .checks {
+    border-radius: 50%;
+    background-color: blue;
+  }
+  .add .checks path {
+    fill: white;
+  }
+  .login {
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #06511c, #097629 20%, #947b00);
+  }
+  /* sign in background image */
+  .background-imag {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background: url("../Images/black\ pattern.png");
+  }
+  /* image area */
+  .imag-area {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    border-radius: 40px 0 0 40px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.163),
+        rgba(255, 255, 255, 0.064),
+        rgba(255, 255, 255, 0.432),
+        #197726b1,
+        #197725
+      ),
+      url("../Images/Rectangle 5.png") center/cover;
+  }
+  /* image div text holder */
+  .text-image-holder {
+    width: 56%;
+    height: 40%;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+  }
+  /* (REGISTER AN ACCOUNT) */
+  .RAN {
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 3px rgba(211, 211, 211, 0.495);
+    background: linear-gradient(to right, #06511c, #097629 20%, #947b00);
+  }
+  .RAN a {
+    color: white;
+  }
+  .error {
+    color: red;
+  }
+}
