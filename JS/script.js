@@ -20,7 +20,7 @@ BTNS.forEach((eachbtn) => {
       if (userlogin === null) {
         alert("please sign up you don't have an account with us");
       } else {
-        window.location.pathname = "Html/course.html";
+        window.location.pathname = "/GreenGold/Html/course.html";
       }
 
       e.preventDefault();
