@@ -58,7 +58,7 @@ clickable_item.forEach((allclick) => {
           if (pass_word.value == confirm_password.value) {
             if (signcomplete) {
               e.preventDefault();
-              window.location.pathname = "/Html/signin.html";
+              window.location.pathname = "/GreenGold/Html/signin.html";
             } else {
               errormessage.textContent =
                 "**please read and check our policy and terms";

@@ -27,7 +27,7 @@ BTNS.forEach((button) => {
       let savedpassword = localStorage.getItem("password");
       if (savedusename === user && savedpassword === userpassword) {
         e.preventDefault();
-        window.location.pathname = "/Html/profile.html";
+        window.location.pathname = "/GreenGold/Html/profile.html";
       } else {
         e.preventDefault();
         errormessage.textContent = "Incorrect username or Password";

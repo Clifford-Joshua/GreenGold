@@ -30,7 +30,7 @@ BTNS.forEach((eachbtn) => {
       if (userlogin === null) {
         alert("please sign up you don't have an account with us");
       } else {
-        window.location.pathname = "/Html/profile.html";
+        window.location.pathname = "/GreenGold/Html/profile.html";
       }
     }
     // enroll
@@ -38,7 +38,7 @@ BTNS.forEach((eachbtn) => {
       if (userlogin === null) {
         alert("please sign up you don't have an account with us");
       } else {
-        window.location.pathname = "/Html/signup.html";
+        window.location.pathname = "/GreenGold/Html/signup.html";
       }
     }
   });
